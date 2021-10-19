@@ -7,7 +7,7 @@
 
 * * *
 ## 2020
-ROOTCON CTF
+ROOTCON Recover Mode CTF
 
 [Forensics - Warmup](/content/2020_CTF/RC14/warmup.md)
 
