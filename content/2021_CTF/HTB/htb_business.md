@@ -7,6 +7,7 @@ Hack The Box (HTB) hosted its very first “corporate only” CTF this past week
 -------------------------------------------------------
 #### Web
 - [Time](#time)
+- [NoteQL](#noteql)
 
 
 
@@ -145,3 +146,31 @@ I make an easy request using Burpsuite:
 ![](5.png)
 
 Gotcha, I found a flag!!!
+
+------------------------------------------------------
+
+## NoteQL
+
+Challenge: NoteQL
+
+Category: Web
+
+![](6.png)
+
+The application is a note-taking application that uses GraphQL to save and fetch notes. I forgot to screenshots the main page of the challenge but our goal is to get the Hidden/Admin Notes.
+
+I use Burpsuite to observe the GraphQL request and response.
+
+![](7.png)
+
+Default query is:
+
+```{“query” : “{ MyNotes {id, title, completed}}”}```
+
+I tried to change the MyNotes to Notes (guess), but I found an interesting response. Notes do not exist, but the response suggests other Notes, such as **Note, MyNotes, and AllNotes.**
+
+![](8.png)
+
+I change the query into **AllNotes**, then I found the flag at **id:3, title: HTB{n0b0dy_c0ntr0ls_m3!!}**
+
+![](9.png)
