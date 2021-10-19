@@ -87,7 +87,7 @@ So it seems we have found a valid string **magicword=pwndemanilaffyjL**
 
 **Second Condition:**
 
-Line 25 to 26 is easy, we just need the same value of get2and md5 of get3.Which are magic hashes that we already used in the example above.
+Line 25 to 26 is easy, we just need the same value of get2 and md5 of get3. Which are magic hashes that we already used in the example above.
 
 bonus=0e462097431906509019562988736854
 
