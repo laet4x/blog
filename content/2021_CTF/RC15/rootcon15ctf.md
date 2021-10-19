@@ -18,9 +18,21 @@ Before I totally lost focus, let me go back on the CTF Web challenge — 200 poi
 Let's Go!!
 
 Challenge Writeups
+
 Category: Web
+
 Challenge: You can’t see me!
+
 Points: 200
 
 ![](2.png)
+
+The IP address above directed me to the PHP code below.
+
+![](3.png)
+
+### Analysis
+LINE 7 is the inclusion of the file flag.phpbut we can't see the source code.
+LINE 11 is to GET request accepting 2 parameters. If you look closely the font used for the letter C in rootcon is different in the 2nd get request. The condition tells us that these 2 parameters should not be equal.
+
 
