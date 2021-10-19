@@ -12,7 +12,6 @@ ROOTCON Recover Mode CTF
 [Web - Wizardry](/content/2020_CTF/RC14/wizardry/wizardry.md) 
 * * *
 
-* * *
 ## 2019
 HACKTHEBOX
 
