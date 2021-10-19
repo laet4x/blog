@@ -61,6 +61,7 @@ After several minutes I got the results:
 ![](8.png)
 
 Solution:
+
 pwndemanilaaffyjL = 0e154876879366669632612315475677
 
 pwndemanilaa1MGTc = 0e660685420749161809595800684366
@@ -79,8 +80,8 @@ Special Thanks!
 
 I would like to thanks pwndemanila and rootcon for the exciting challenges in this year’s Capture The Flag. Shoutout to our another team, SOCTEAM CTF for the support. See you next year!!!
 
-https://www.rootcon.org/
+[https://www.rootcon.org/](https://www.rootcon.org/)
 
-https://twitter.com/rootconph
+[https://twitter.com/rootconph](https://twitter.com/rootconph)
 
-https://www.facebook.com/rootcon/
+[https://www.facebook.com/rootcon/](https://www.facebook.com/rootcon/)
