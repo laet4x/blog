@@ -28,6 +28,7 @@ Line 5 to 7 is a GET request accepting 3 parameters magicword , bonusand round
 Line 8 to 9 is a static value. (Shoutout to PWN DE MANILA)
 
 **First Condition:**
+
 ![](3.png)
 
 The condition is a bit confusing at first. It indicates that thehash must equal to the md5 of get1which is from the magicwordparameter. It doesn’t make sense to me, so I have to check more about MD5 hash and by doing so I found a blog about Magic Hashes.
@@ -82,11 +83,9 @@ Line 5 — $get1 md5 value and $hash value returns TRUE, even not match since it
 
 Line 7 — $get1 value contains a regular expression from $host value /pwndemanila/ which returns TRUE.
 
-So it seems we have found a valid string
+So it seems we have found a valid string **magicword=pwndemanilaffyjL**
 
-magicword=pwndemanilaffyjL
-
-Second Condition:
+**Second Condition:**
 
 Line 25 to 26 is easy, we just need the same value of get2and md5 of get3.Which are magic hashes that we already used in the example above.
 
@@ -94,16 +93,15 @@ bonus=0e462097431906509019562988736854
 
 round=240610708
 
-Combining all the GET parameter requests we’ll get:
-
-http://45.32.113.117/?bonus=0e462097431906509019562988736854&round=240610708&magicword=pwndemanilaffyjL
+Combining all the GET parameter requests we’ll get: http://45.32.113.117/?bonus=0e462097431906509019562988736854&round=240610708&magicword=pwndemanilaffyjL
 
 Voila!!! We get the Flag! (I didn't get the screenshots from the web).
 
 **RC14{m4g1c4ndv1rus3s15ev3rywh3r3h4h4h4h4}**
 
 
-**Conclusion:**
+
+### Conclusion:
 In this challenge, we learn more about Magic hashes and PHP Type Juggling.
 
 For Reference:
