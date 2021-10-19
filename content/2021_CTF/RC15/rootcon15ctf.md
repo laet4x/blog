@@ -50,7 +50,7 @@ Let’s analyze the next line, which is LINE 12, which indicates that the 2 md5h
 
 ![](6.png)
 
-It reminds me of my previous writeup for Rootcon Recovery Mode last year about magic hash. You may check it from this link below https://laet4x.medium.com/rootcon-recovery-mode-ctf-final-web-wizardry-1419d664eedf
+It reminds me of my previous writeup for Rootcon Recovery Mode last year about magic hash. You may check it from this link below [https://laet4x.medium.com/rootcon-recovery-mode-ctf-final-web-wizardry-1419d664eedf](https://laet4x.medium.com/rootcon-recovery-mode-ctf-final-web-wizardry-1419d664eedf).
 
 So I decided to reuse the script. Basically, this script will find word/s to combine with the word ‘pwndemanila’, which in return will results in “0e” + 30 digits MD5 hash.
 
