@@ -8,6 +8,7 @@
 * * *
 ## 2020
 ROOTCON CTF
+
 [Forensics - Warmup](/content/2020_CTF/RC14/warmup.md)
 
 [Web - Wizardry](/content/2020_CTF/RC14/wizardry.md) 
