@@ -9,7 +9,7 @@
 ## 2020
 ROOTCON Recover Mode CTF
 
-[Forensics - Warmup](/content/2020_CTF/RC14/warmup.md)
+[Forensics - Warmup](/content/2020_CTF/RC14/warmup/warmup.md)
 
-[Web - Wizardry](/content/2020_CTF/RC14/wizardry.md) 
+[Web - Wizardry](/content/2020_CTF/RC14/wizardry/wizardry.md) 
 * * *
