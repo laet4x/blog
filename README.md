@@ -6,8 +6,8 @@
 ## 2020
 
 * * *
-| ROOTCON CTF                                                 | tl;dr         | 
-|:-------------------------------------------------------------|:--------------|
-| [Forensics - Warmup](/content/2020_CTF/RC14/warmup.md) | Memory Forensics | 
-| [Web - Wizardry](/content/2020_CTF/RC14/wizardry.md)       | Secure Coding, Magic Hashes        |
+ROOTCON CTF
+[Forensics - Warmup](/content/2020_CTF/RC14/warmup.md)
+
+[Web - Wizardry](/content/2020_CTF/RC14/wizardry.md) 
 * * *
