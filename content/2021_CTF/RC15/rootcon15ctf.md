@@ -30,7 +30,7 @@ We change the path to /flag.txt to read the file. But we got encoded data.
 
 ![](exploitation4/exploitation4_2.png)
 
-We decode use some online decoding tools to decode the data.
+We used some online decoding tools to decode the data.
 
 ![](exploitation4/exploitation4_3.png)
 
