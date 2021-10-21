@@ -17,7 +17,7 @@ I’m back to ROOTCON CTF! This time with a new team which we called Squid Gamer
 ## Exploitation4
 ![](exploitation4/exploitation4.png)
 
-This challenge need to read the /flag.txt file
+This challenge require us to read the /flag.txt file
 
 During our enumeration we found the **Elasticsearch Directory Traversal (CVE-2015-5531)** vulnerabilities
 
