@@ -19,7 +19,7 @@ I’m back to ROOTCON CTF! This time with a new team which we called Squid Gamer
 
 This challenge need to read the /flag.txt file
 
-During our enumeration we found the Elasticsearch Directory Traversal (CVE-2015-5531) vulnerabilities
+During our enumeration we found the **Elasticsearch Directory Traversal (CVE-2015-5531)** vulnerabilities
 
 Description:
 Directory traversal vulnerability in Elasticsearch before 1.6.1 allows remote attackers to read arbitrary files via unspecified vectors related to snapshot API calls.
