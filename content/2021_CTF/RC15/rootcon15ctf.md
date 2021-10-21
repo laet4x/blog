@@ -4,6 +4,7 @@ I’m back to ROOTCON CTF! This time with a new team which we called Squid Gamer
 
 -------------------------------------------------------
 #### Exploitation
+- [Exploitation 4](#exploitation4)
 - [Exploitation 6](#exploitation6)
 
 #### Web
@@ -13,7 +14,28 @@ I’m back to ROOTCON CTF! This time with a new team which we called Squid Gamer
 
 
 ------------------------------------------------------
+## Exploitation4
+![](exploitation4/exploitation4.png)
+This challenge need to read the /flag.txt file
 
+During our enumeration we found the Elasticsearch Directory Traversal (CVE-2015-5531) vulnerabilities
+
+Description:
+Directory traversal vulnerability in Elasticsearch before 1.6.1 allows remote attackers to read arbitrary files via unspecified vectors related to snapshot API calls.
+
+![](exploitation4/exploitation4_1.png)
+
+We change the path to /flag.txt to read the file. But we got encoded data.
+![](exploitation4/exploitation4_2.png)
+
+We decode use some online decoding tools to decode the data.
+![](exploitation4/exploitation4_3.png)
+
+![](exploitation4/exploitation4_4.png)
+
+Flag: **RC15{J5ekuUdMY7BLZmktYCXzWZhZZ4J3W8pv}**
+
+------------------------------------------------------
 ## Exploitation6
 ![](exploitation6/exploitation6.png)
 
@@ -106,6 +128,8 @@ I crafted our final URL and we Got the flag:
 http://149.28.134.167/?rootcon=ffyjL&root%D1%81on=a1MGTc
 
 ![](web200/9.png)
+
+Flag: **RC15{tqfXZWoEvj4ukK5WJGAPqTfBRs7iTN}**
 
 Special Thanks!
 
