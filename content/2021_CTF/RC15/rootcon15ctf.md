@@ -30,7 +30,7 @@ We change the path to /flag.txt to read the file. But we got encoded data.
 
 ![](exploitation4/exploitation4_2.png)
 
-We used some online decoding tools to decode the data.
+We used some online decoding tools to decode the data from decimal into ascii.
 
 ![](exploitation4/exploitation4_3.png)
 
@@ -42,7 +42,7 @@ Flag: **RC15{J5ekuUdMY7BLZmktYCXzWZhZZ4J3W8pv}**
 ## Exploitation6
 ![](exploitation6/exploitation6.png)
 
-This challenge requires us get an access to the server.
+This challenge requires us to get shell access to the server.
 
 Based on our enumeration using Ridgebot, one of the vulnerablities of the server is **Shellshock Remote Code Execution (CVE-2014-6271).**
 
