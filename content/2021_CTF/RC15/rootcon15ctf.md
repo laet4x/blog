@@ -17,21 +17,21 @@ I’m back to ROOTCON CTF! This time with a new team which we called Squid Gamer
 ## Exploitation6
 ![](exploitation6/exploitation6.png)
 
-The challenge is we need to get shell access to the server.
+This challenge requires us get an access to the server.
 
 Based on our enumeration using Ridgebot, one of the vulnerablities of the server is **Shellshock Remote Code Execution (CVE-2014-6271).**
 
 Description: GNU Bash through 4.3 processes trailing strings after function definitions in the values of environment variables, which allows remote attackers to execute arbitrary code via a crafted environment, as demonstrated by vectors involving the ForceCommand feature in OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP Server, scripts executed by unspecified DHCP clients, and other situations in which setting the environment occurs across a privilege boundary from Bash execution, aka 'ShellShock.'
 
-I use ngrok since i dont have any VPS to create a tunnel to the target server
+I use ngrok since i dont have any VPS to create a tunnel to my kali machine
 
 ![](exploitation6/exploitation6_1.png)
 
-Then i replace the payload with one-liner reverse shell
+I replace the payload with one-liner reverse shell
 
 ![](exploitation6/exploitation6_2.png)
 
-I prepare my netcat listener, then i hit enter in payload i got a reverse shell connection
+I prepare my netcat listener, then i hit enter  then i got a reverse shell connection
 
 ![](exploitation6/exploitation6_3.png)
 
@@ -40,6 +40,7 @@ Inside the server, i found the image which contains the flag
 ![](exploitation6/exploitation6_4.png)
 
 Flag: **RC15{sXpbTeFkvtXALSTpT2Fd866774kA5kzp}**
+
 ------------------------------------------------------
 
 ## Web200
