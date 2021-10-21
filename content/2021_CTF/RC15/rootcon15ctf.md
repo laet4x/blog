@@ -44,7 +44,7 @@ Flag: **RC15{sXpbTeFkvtXALSTpT2Fd866774kA5kzp}**
 ------------------------------------------------------
 
 ## Web200
-![](1.png)
+![](web200/1.png)
 
 Let's Go!!
 
@@ -56,22 +56,22 @@ Challenge: You can’t see me!
 
 Points: 200
 
-![](2.png)
+![](web200/2.png)
 
 The IP address above directed me to the PHP code below.
 
-![](3.png)
+![](web200/3.png)
 
 ### Analysis
 LINE 7 is the inclusion of the file flag.phpbut we can't see the source code.
 
 LINE 11 is to GET request accepting 2 parameters. If you look closely the font used for the letter C in rootcon is different in the 2nd get request. The condition tells us that these 2 parameters should not be equal.
 
-![](4.png)
+![](web200/4.png)
 
 I manually copied the word and verified it using URL decoding.
 
-![](5.png)
+![](web200/5.png)
 
 Now we have our URL without a value:
 
@@ -79,17 +79,17 @@ http://149.28.134.167/?rootcon=&root%D1%81on=
 
 Let’s analyze the next line, which is LINE 12, which indicates that the 2 md5hash must be equal.
 
-![](6.png)
+![](web200/6.png)
 
 It reminds me of my previous writeup for Rootcon Recovery Mode last year about magic hash. You may check it from this link below [https://laet4x.medium.com/rootcon-recovery-mode-ctf-final-web-wizardry-1419d664eedf](https://laet4x.medium.com/rootcon-recovery-mode-ctf-final-web-wizardry-1419d664eedf).
 
 So I decided to reuse the script. Basically, this script will find word/s to combine with the word ‘pwndemanila’, which in return will results in “0e” + 30 digits MD5 hash.
 
-![](7.png)
+![](web200/7.png)
 
 After several minutes I got the results:
 
-![](8.png)
+![](web200/8.png)
 
 Solution:
 
@@ -105,7 +105,7 @@ I crafted our final URL and we Got the flag:
 
 http://149.28.134.167/?rootcon=ffyjL&root%D1%81on=a1MGTc
 
-![](9.png)
+![](web200/9.png)
 
 Special Thanks!
 
