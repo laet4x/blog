@@ -25,11 +25,11 @@ I install a cookie editor to use the session came from the results of my XSS att
 
 ![](web1/4.png)
 
-Then I redirected to the admin panel and I dont see any field or upload files, just the ticket that I submitted, then I check the links and I found a change password field.
+Then I redirected to the admin panel and I dont see any field or upload files, just the ticket that I submitted, then I check the links and I found a change password field. I tried to change the password of the current account and I notice that the account that I compromised is a moderator.
 
 ![](web1/5.png)
 
-I notice that the account that I compromised is a moderator, Im thinking that there is an Admin account for this application.
+Im thinking that there is an Admin account for this application.
 I enable the inspect element functions of browser to check a hidden fields, then I found a UID.
 
 ![](web1/6.png)
