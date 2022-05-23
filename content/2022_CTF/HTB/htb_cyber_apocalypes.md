@@ -17,7 +17,7 @@ I submit a test content and we got this:
 
 ![](web1/2.png)
 
-This a message  that give me a hint of possible XSS attack to get an Admin Cookies, and yes I send a crafted xss payload to get the admin cookies. Gotcha!
+The message above give me a hint of possible XSS attack that we able to get an Admin Cookies/Session, I sent a crafted xss payload to get the admin cookies. Gotcha! 
 
 ![](web1/3.png)
 
