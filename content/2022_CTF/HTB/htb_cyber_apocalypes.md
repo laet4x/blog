@@ -5,7 +5,7 @@ I’m back to HTB! This time with a new team which we called HackinKaNalang. Des
 -------------------------------------------------------
 #### Web
 - [Web 300 : Kryptos Support ](#kryptos_support)
-- [Web 300 : BlinkerFluids ](#web2)
+- [Web 300 : BlinkerFluids ](#blinkerfluids)
 
 ------------------------------------------------------
 ## Kryptos_Support
@@ -43,4 +43,38 @@ I login using admin and my chosen password and automatically redirected to Home 
 ![](web1/flag.png)
 
 Conclusion: We able to get the flag since the application are vulnerable to Persistent XSS and IDOR or known as Insicure Direct Object Reference
+------------------------------------------------------
+
+
+------------------------------------------------------
+## BlinkerFluids
+![](web2/1.png)
+
+The challenge contains of web app and a source code.
+The page contains of markdown editor and after submission it convert the text to pdf.
+
+I review the source code and its node.js so basically i check the packages.json for possible vulnerable packages, and i notice the md-to-pdf package.
+![](web2/2.png)
+
+I search of possible exploit and i found RCE on snyk.io : https://security.snyk.io/vuln/SNYK-JS-MDTOPDF-1657880
+
+![](web2/22.png)
+
+I check the github issues and found interested comment
+
+![](web2/23.png)
+
+I created a RCE code and supplied it to the markdown editor and I click submit
+
+![](web2/3.png)
+
+I created another markdown to check if the rce2.txt is created, and it listed all the files which the rce2.txt has been created
+
+![](web2/4.png)
+
+I created a final markdown content to read the rce2.txt, then i got the file.
+
+![](web2/flag.png)
+
+Conclusion: We able to get the flag by using package vulnerabilities, what i learn here is the importance of the source code review.
 ------------------------------------------------------
