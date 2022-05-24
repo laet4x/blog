@@ -72,7 +72,7 @@ I created another markdown to check if the rce2.txt is created, and it listed al
 
 ![](web2/4.png)
 
-I created a final markdown content to read the rce2.txt, then i got the file.
+I created a final markdown content to read the rce2.txt, then i got the flag.
 
 ![](web2/flag.png)
 
